@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #6BD66B, rgb(228, 199, 146));
+}
+.game {
+  background-color: rgba(255, 255, 255, 0.5);
+  min-height: 80%;
+  min-width: 50%;
+  border-radius: 20px;
+  padding: 10px;
+}
+.game h1 {
+  text-align: center;
+}
+.options {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+.btn {
+  flex: 1;
+  font-size: 3rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: 0.2s;
+}
+.btn:hover {
+  font-size: 5rem;
+}
+.display {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+.display p {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.player {
+  flex: 1;
+}
+.cpu {
+  flex: 1;
+}
+.display-player,
+.display-cpu {
+  width: 150px;
+  height: 120px;
+  margin: 0 auto;
+  font-size: 5rem;
+  text-align: center;
+}
+.score {
+  width: 100%;
+
+  height: 60px;
+}
+.score h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.score-container {
+  display: flex;
+}
+.player-score,
+.cpu-score {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.message {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .game {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .game {
+    width: 90%;
+    height: 90%;
+  }
+  .game h1 {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 2rem;
+  }
+  .btn:hover {
+    font-size: 3rem;
+  }
+  .display-player,
+  .display-cpu {
+    font-size: 3.5rem;
+  }
+
+  .display p {
+    font-size: 1rem;
+  }
+}
